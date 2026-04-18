@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hermes-linebot
+    env: python
+    buildCommand: pip install -r linebot/requirements.txt
+    startCommand: gunicorn linebot.main:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        sync: false
+      - key: LINE_CHANNEL_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

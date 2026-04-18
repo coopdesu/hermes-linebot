@@ -1,0 +1,392 @@
+[
+  {
+    "name_jp": "トゴ",
+    "name_en": "Togo",
+    "description_jp": "ほどよい柔らかさとほどよい目の大きさが特徴の雄仔牛のレザー。1997年に登場以来、その扱いやすさから抜群の人気を集める素材。バッグから小物まで幅広いアイテムで展開されている。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%82%B4&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaucrispetogo.jpg"
+  },
+  {
+    "name_jp": "トリヨンクレマンス",
+    "name_en": "Clemence",
+    "description_jp": "かつてムーと呼ばれた素材のひとつ。くったりとした柔らかい質感が特徴の雄成牛のレザー。バッグから小物まで幅広いアイテムで展開されている。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AA%E3%83%A8%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%9E%E3%83%B3%E3%82%B9&stock%5B",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/taurillonclemence.jpg"
+  },
+  {
+    "name_jp": "トリヨンノビーヨ",
+    "name_en": "Novillo",
+    "description_jp": "ほどよく柔らかな質感とほんのりとしたマット感が魅力の雄成牛のレザー。細かくもはっきりとした凹凸が特徴的。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AA%E3%83%A8%E3%83%B3%E3%83%8E%E3%83%93%E3%83%BC%E3%83%A8&stock%5B%5D=2&ProductMetal=&mode",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/taurillonnovillo.jpg"
+  },
+  {
+    "name_jp": "トリヨンモーリス",
+    "name_en": "Maurice",
+    "description_jp": "ほどよく柔らかな質感とナチュラルながらも細やかな凹凸が魅力の雄成牛のレザー。ほんのりとマットな風合いが特徴の素材。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AA%E3%83%A8%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AA%E3%82%B9&stock%5B%5D=2&ProductMetal=",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/taurillonmaurice.jpg"
+  },
+  {
+    "name_jp": "バレニアフォーブル",
+    "name_en": "Barenia Faubourg",
+    "description_jp": "くったりとした質感とほどよい弾力のある素材。はっきりとした凹凸のある仕上がりと革本来のじんわりとした艶感が特徴的。](https://www.lecrin.jp/products/list?name=%E3%83%90%E3%83%AC%E3%83%8B%E3%82%A2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%96%E3%83%AB&stock%5B%5D=2&Prod",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/bareniafaubourg.jpg"
+  },
+  {
+    "name_jp": "フィヨルド",
+    "name_en": "Fjord",
+    "description_jp": "ほどよい柔らかさとマット感が特徴の雌仔牛のレザー。牛革の中では耐水性に優れるため、ガーデンパーティーなどのカジュアルバッグにも用いられる。](https://www.lecrin.jp/products/list?name=%E3%83%95%E3%82%A3%E3%83%A8%E3%83%AB%E3%83%89&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/vachettecrispefjord.jpg"
+  },
+  {
+    "name_jp": "ネゴンダ",
+    "name_en": "Negonda",
+    "description_jp": "2007年に登場した雄仔牛のレザー。主にガーデンパーティーで展開されている。ネゴンダとブッフルシンドゥの発色の違いから、カラーによって採用される素材が異なる。 ](https://www.lecrin.jp/products/list?name=%E3%82%A8%E3%83%90%E3%83%BC%E3%82%AB%E3%83%A9%E3%83%BC&stock%5B%5D=2&ProductM",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaunegonda.jpg"
+  },
+  {
+    "name_jp": "エバーカラー",
+    "name_en": "Evercolor",
+    "description_jp": "ほどよい硬さとマット感が特徴の雄仔牛のレザー。2013年に登場。](https://www.lecrin.jp/products/list?name=%E3%82%A8%E3%83%90%E3%83%BC%E3%82%AB%E3%83%A9%E3%83%BC&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauevercolor.jpg"
+  },
+  {
+    "name_jp": "ヴォーエプソン",
+    "name_en": "Epsom",
+    "description_jp": "プレス加工を施した細かな型押しが特徴の雄仔牛のレザー。2003年に登場以来、抜群の人気を集める素材。バッグから小物まで幅広いアイテムで展開されている。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A9%E3%83%BC%E3%82%A8%E3%83%97%E3%82%BD%E3%83%B3&stock%5B%5D=2&Prod",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauepsom.jpg"
+  },
+  {
+    "name_jp": "マダム",
+    "name_en": "Madame",
+    "description_jp": "プレス加工を施した細かな型押しが特徴の雄仔牛のレザー。控えめながらも独特の光沢感のある素材。](https://www.lecrin.jp/products/list?name=%E3%83%9E%E3%83%80%E3%83%A0&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaumadame.jpg"
+  },
+  {
+    "name_jp": "グレネムッシュ",
+    "name_en": "Grain de Monsieur",
+    "description_jp": "プレス加工を施した細かな型押しが特徴の雄仔牛のレザー。控えめながらも独特の光沢感のある素材。](https://www.lecrin.jp/products/list?name=%E3%82%B0%E3%83%AC%E3%83%8D%E3%83%A0%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaugrainemonsieur.jpg"
+  },
+  {
+    "name_jp": "ヴァッシュトレッキング",
+    "name_en": "Vache Trekking",
+    "description_jp": "プレス加工を施した比較的細かな型押しが特徴の雌牛のレザー。2009年に登場、バッグを中心に限られたカラーで展開されている。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A5%E3%83%88%E3%83%AC%E3%83%83%E3%82%AD%E3%83%B3%E3%82",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/vachetrekking.jpg"
+  },
+  {
+    "name_jp": "カントリー",
+    "name_en": "Country",
+    "description_jp": "ほどよい硬さとプレス加工を施した型押しが特徴の雌仔牛のレザー。2012年に登場、主にガーデンパーティーで展開されている。 ](https://www.lecrin.jp/products/list?name=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%A2%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&ProductMetal=&mode",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/vachettecountry.jpg"
+  },
+  {
+    "name_jp": "グランアッシュ",
+    "name_en": "Grain d'Asche",
+    "description_jp": "プレス加工を施し、整列された細かな型押しが特徴の雄仔牛のレザー。2012年に登場、バッグから小物まで幅広いアイテムで展開されている。](https://www.lecrin.jp/products/list?name=%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%A2%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&ProductMetal=",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaugraindh.jpg"
+  },
+  {
+    "name_jp": "スイフト",
+    "name_en": "Swift",
+    "description_jp": "ほどよい柔らかさとスムースな質感が特徴の雄仔牛のレザー。2006年に登場、発色に優れた素材。](https://www.lecrin.jp/products/list?name=%E3%82%B9%E3%82%A4%E3%83%95%E3%83%88&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauswift.jpg"
+  },
+  {
+    "name_jp": "シッキム",
+    "name_en": "Sikkim",
+    "description_jp": "ほんのりつややかな質感とふわっとやわらかな風合いが特徴の雄仔牛のレザー。限られたモデルとカラーで展開されている。](https://www.lecrin.jp/products/list?name=%E3%82%B7%E3%83%83%E3%82%AD%E3%83%A0&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veausikkim.jpg"
+  },
+  {
+    "name_jp": "ジョナサン",
+    "name_en": "Jonathan",
+    "description_jp": "ほどよい柔らかさとスムースな質感の雄仔牛のレザー。美しく繊細なマット感となめらかな仕上がりが特徴。](https://www.lecrin.jp/products/list?name=%E3%82%B8%E3%83%A7%E3%83%8A%E3%82%B5%E3%83%B3&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaujonathan.jpg"
+  },
+  {
+    "name_jp": "ムッシュ",
+    "name_en": "Monsieur",
+    "description_jp": "ナチュラルな雰囲気がただよう美しく繊細な光沢感のある素材。きめ細やかな質感としっかりとした素材感が特徴のレザー。](https://www.lecrin.jp/products/list?name=%E3%83%A0%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/monsieur.jpg"
+  },
+  {
+    "name_jp": "バトラー",
+    "name_en": "Butler",
+    "description_jp": "マットな質感と弾力があり、繊細でほんのりとした光沢のある雄仔牛のレザー。時とともに革本来の油分で独特のじんわりとした艶感を帯びた色に変化するのが特徴。](https://www.lecrin.jp/products/list?name=%E3%83%90%E3%83%88%E3%83%A9%E3%83%BC&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaubutler.jpg"
+  },
+  {
+    "name_jp": "ヴァッシュ",
+    "name_en": "Vache Natural",
+    "description_jp": "表面加工を施さないヌメ革のため、キズがつきやすい雌牛のレザー。時とともに革の味わいが深まる色に変化するのが特徴。 ブラックとナチュラルでのみ展開 ](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A5%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC&st",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ヴァッシュハンター",
+    "name_en": "Vache Hunter",
+    "description_jp": "ほどよい柔らかさとスムースな質感の雌牛のレザー。美しく繊細なマット感となめらかな仕上がりが特徴。 ](https://www.lecrin.jp/products/list?name=%E3%83%90%E3%83%AC%E3%83%8B%E3%82%A2&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/vachehunter.jpg"
+  },
+  {
+    "name_jp": "バレニア",
+    "name_en": "Barenia",
+    "description_jp": "マットな質感と弾力があり、ヌメ革のようにキズがつきやすい雄仔牛のレザー。時とともに革本来の油分で独特のじんわりとした艶感を帯びた色に変化するのが特徴。](https://www.lecrin.jp/products/list?name=%E3%83%90%E3%83%AC%E3%83%8B%E3%82%A2&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaubarenia.jpg"
+  },
+  {
+    "name_jp": "ボックスカーフ",
+    "name_en": "Box Calf",
+    "description_jp": "1890年代のイギリスの靴屋、ジョゼフ・ボックスの名前に由来。ツヤ加工を施した光沢のある雄仔牛のレザー。時とともに気品あふれる光沢を帯びてくるのが特徴。](https://www.lecrin.jp/products/list?name=%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%95&stock%5B%5D=2&Pro",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaubox.jpg"
+  },
+  {
+    "name_jp": "タデラクト",
+    "name_en": "Tadelakt",
+    "description_jp": "ツヤ加工を施した美しい繊細な光沢感のある雄仔牛のレザー。時とともに気品あふれる光沢を帯びてくるのが特徴。](https://www.lecrin.jp/products/list?name=%E3%82%BF%E3%83%87%E3%83%A9%E3%82%AF%E3%83%88&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veautadelakt.jpg"
+  },
+  {
+    "name_jp": "ソンブレロ",
+    "name_en": "Sombrero",
+    "description_jp": "2011年に登場した美しい繊細なマット感のある雄仔牛のレザー。肌のように滑らかな質感と張りのあるしっかりとした素材感が特徴。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A9%E3%83%BC%E3%82%BD%E3%83%B3%E3%83%96%E3%83%AC%E3%83%AD&stock%5B%5D=2&ProductM",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ヴォーシャモニー",
+    "name_en": "Veau Chamonix",
+    "description_jp": "フランス東部アルプス、モンブランの麓に広がるシャモニーの雄仔牛のレザー。肌のようにしっとりとした質感とボックスカーフを若干マットにしたような素材感が特徴。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A9%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%A2%E3%83%8B%E3%83%BC&stock%5",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauchamonix.jpg"
+  },
+  {
+    "name_jp": "ヴォーデルマ",
+    "name_en": "Veau D'Eclat",
+    "description_jp": "2004年に登場した、革の薄さとともにくったりとした柔らかさとスムースな質感が特徴の雄仔牛のレザー。 キャラバンでのみ展開 ](https://www.lecrin.jp/products/list?name=%E3%82%A8%E3%83%90%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%95&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": ""
+  },
+  {
+    "name_jp": "エバーカーフ",
+    "name_en": "Evercalf",
+    "description_jp": "くったりとした柔らかさとマットでスムースな質感が特徴の雄仔牛のレザー。](https://www.lecrin.jp/products/list?name=%E3%82%A8%E3%83%90%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%95&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauevercalf.jpg"
+  },
+  {
+    "name_jp": "ヴォートロイカ",
+    "name_en": "Veau Troika",
+    "description_jp": "ハラコとも呼ばれる、雄仔牛の毛を染色・加工を施した素材。なめらかな手触りと艶のある美しい毛並みが特徴。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%88%E3%83%AD%E3%82%A4%E3%82%AB&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veautroika.jpg"
+  },
+  {
+    "name_jp": "ヴォーベロア",
+    "name_en": "Veau Velours",
+    "description_jp": "ヌバックとも呼ばれる雄仔牛のレザー。革の裏面をベルベット状に毛足を滑らかに起毛加工を施したスエード素材。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%99%E3%83%AD%E3%82%A2&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veauveloursdoblis.jpg"
+  },
+  {
+    "name_jp": "グリズリー",
+    "name_en": "Grizzly",
+    "description_jp": "ヌバックとも呼ばれる雄仔牛のレザー。革の裏面をベルベット状に毛足を短く起毛加工を施したスエード素材。](https://www.lecrin.jp/products/list?name=%E3%82%B0%E3%83%AA%E3%82%BA%E3%83%AA%E3%83%BC&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/veaugrizzly.jpg"
+  },
+  {
+    "name_jp": "ヴァッシュリエジェ",
+    "name_en": "Vache Liegee",
+    "description_jp": "プレス加工を施した型押しが特徴の光沢のある雌牛のレザー。2004年に登場、バッグを中心に限られたカラーで展開されている。](https://www.lecrin.jp/products/list?name=%E3%83%B4%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%82%A8%E3%82%B8%E3%82%A7&stock%5B%5D=2&P",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/vacheliegee.jpg"
+  },
+  {
+    "name_jp": "アルデンヌ",
+    "name_en": "Ardennes",
+    "description_jp": "フランス北部からベルギー南部に位置するアルデンヌ地方の雌仔牛のレザー。プレス加工を施した型押しが特徴。廃番のため、ヴァッシュリエジェが現在の後継素材。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ヴォーガリバー",
+    "name_en": "Veau Gulliver",
+    "description_jp": "かつてムーと呼ばれた素材のひとつ。くったりとした柔らかさとスムースな質感が特徴の雄仔牛のレザー。廃番のため、ヴォースイフトが現在の後継素材。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ヴォーグレネ",
+    "name_en": "Veau Grene",
+    "description_jp": "プレス加工を施したマット感のある細かな型押しが特徴の雄仔牛のレザー。廃番のため、ヴォーエプソンが現在の後継素材。 ホワイトとナチュラルでのみ展開",
+    "image_url": ""
+  },
+  {
+    "name_jp": "クシュベル",
+    "name_en": "Courchevel",
+    "description_jp": "ガラス加工やプレス加工を施した光沢のある細かな型押しが特徴の雄仔牛のレザー。廃番のため、ヴォーエプソンが現在の後継素材。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "リセ",
+    "name_en": "Lisse",
+    "description_jp": "ガラス加工やプレス加工を施した強い光沢のある細かな型押しが特徴の雄仔牛のレザー。クシュベル・ヴォーグレネの後継素材として展開された。廃番のため、ヴォーエプソンが現在の後継素材。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "シェブルミゾル",
+    "name_en": "Chevre Mysore",
+    "description_jp": "2002年に登場、ほどよい柔らかさとほどよい目の大きさが特徴の雌山羊のレザー。大きなサイズのヤギは非常に限られているため、主に小物やバーキン25などで展開されている。 ](https://www.lecrin.jp/products/list?name=%E3%82%B3%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%87%E3%83%AB&stock%5B%5D=2&Prod",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/chevremyzore.jpg"
+  },
+  {
+    "name_jp": "コロマンデル",
+    "name_en": "Coromandel",
+    "description_jp": "ほどよい柔らかさとほどよい目の大きさが特徴の雌山羊のレザー。艶やかな光沢感と独特の型押しが印象的な素材。](https://www.lecrin.jp/products/list?name=%E3%82%B3%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%87%E3%83%AB&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/chevrecoromandel.jpg"
+  },
+  {
+    "name_jp": "ヴィブラート",
+    "name_en": "Vibrato",
+    "description_jp": "染色した複数のカラーの山羊革を何層にも重ね、貼り合わせてから裁断、その縦の断面を用いた非常にもろいデリケートな素材。さまざまなカラーバリエーションで展開されたが、現在は廃番となっている。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ブッフル",
+    "name_en": "Buffle",
+    "description_jp": "ほどよい柔らかさと若干粗い目の大きさが特徴の水牛のレザー。耐水性に優れるため、ガーデンパーティーなどのカジュアルバッグにも幅広く用いられる。](https://www.lecrin.jp/products/list?name=%E3%83%96%E3%83%83%E3%83%95%E3%83%AB&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/buffle.jpg"
+  },
+  {
+    "name_jp": "ブッフルシンドゥ",
+    "name_en": "Buffle Sindhu",
+    "description_jp": "2007年に登場した水牛のレザー。ガーデンパーティーでのみ展開されている素材。ネゴンダとブッフルシンドゥの発色の違いから、カラーによって採用される素材が異なる。 ガーデンパーティーでのみ展開](https://www.lecrin.jp/products/list?name=%E3%83%96%E3%83%83%E3%83%95%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%8",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/bufflesindhu.jpg"
+  },
+  {
+    "name_jp": "ブッフルガラ",
+    "name_en": "Buffle Gala",
+    "description_jp": "ほどよい柔らかさと比較的細かな目の大きさが特徴の水牛のレザー。素材の特性から、小物類でのみ展開されている。 小物類でのみ展開",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ポンディシェリ",
+    "name_en": "Pondichery",
+    "description_jp": "2009年に登場。インド南部の東海岸に位置する地域の水牛のレザー。ほどよい柔らかさと比較的細かな目の大きさが特徴。素材の特性から、小物類でのみ展開されている。 小物類でのみ展開",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ダルメシアン",
+    "name_en": "Dalmatian",
+    "description_jp": "ダルメシアン柄になるよう二度にわたって染色したもので、ディズニー映画「101匹わんちゃん」をイメージさせるとてもユニークな素材。さまざまなカラーバリエーションで展開されたが、現在は廃番となっている。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ポロサス",
+    "name_en": "Porosus Crocodile",
+    "description_jp": "](https://www.lecrin.jp/products/list?name=%E3%83%8B%E3%83%AD%E3%83%86%E3%82%A3%E3%82%AB%E3%82%B9&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/porosuslisse.jpg"
+  },
+  {
+    "name_jp": "ニロティカス",
+    "name_en": "Niloticus Crocodile",
+    "description_jp": "ジンバブエなどのアフリカ・ナイル川流域を原産地とするクロコダイルのレザーに、めのうで斑を磨く加工「リセ仕上げ」を施したもの。ニロティカス（Niloticus）とはナイル川（Nile）を意味する。](https://www.lecrin.jp/products/list?name=%E3%83%8B%E3%83%AD%E3%83%86%E3%82%A3%E3%82%AB%E3%82%B9&stock",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/niloticuslisse.jpg"
+  },
+  {
+    "name_jp": "アリゲーター",
+    "name_en": "Alligator",
+    "description_jp": "“ミシシッピーワニ”とも呼ばれるアメリカ・ミシシッピー川流域を原産地とするクロコダイルのレザーに、めのうで斑を磨く加工「リセ仕上げ」を施したもの。 ](https://www.lecrin.jp/products/list?name=%E3%83%9D%E3%83%AD%E3%82%B5%E3%82%B9%E3%83%9E%E3%83%83%E3%83%88&stock%5B%5D=2&Produ",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/aligatorlisse.jpg"
+  },
+  {
+    "name_jp": "ポロサスマット",
+    "name_en": "Porosus Mat",
+    "description_jp": "](https://www.lecrin.jp/products/list?name=%E3%83%8B%E3%83%AD%E3%83%86%E3%82%A3%E3%82%AB%E3%82%B9%E3%83%9E%E3%83%83%E3%83%88&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ニロティカスマット",
+    "name_en": "Niloticus Mat",
+    "description_jp": "ジンバブエなどのアフリカ・ナイル川流域を原産地とするクロコダイルのレザーに、ウールのフェルトを用いて機械的に斑を研磨してマット加工を施したもの。ニロティカス（Niloticus）とはナイル川（Nile）を意味する。](https://www.lecrin.jp/products/list?name=%E3%83%8B%E3%83%AD%E3%83%86%E3%82%A3%E3%82%AB%E3%8",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/niloticusmat.jpg"
+  },
+  {
+    "name_jp": "アリゲーターマット",
+    "name_en": "Alligator Mat",
+    "description_jp": "“ミシシッピーワニ”とも呼ばれるアメリカ・ミシシッピー川流域を原産地とするクロコダイルのレザーに、ウールのフェルトを用いて機械的に斑を研磨してマット加工を施したもの。](https://www.lecrin.jp/products/list?name=%E3%82%A2%E3%83%AA%E3%82%B2%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9E%E3%83%83%E",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/aligatormat.jpg"
+  },
+  {
+    "name_jp": "オーストリッチ",
+    "name_en": "Ostrich",
+    "description_jp": "](https://www.lecrin.jp/products/list?name=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/autruche.jpg"
+  },
+  {
+    "name_jp": "リザード",
+    "name_en": "Lizard",
+    "description_jp": "](https://www.lecrin.jp/products/list?name=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%8A%E3%83%81%E3%83%A5%E3%83%A9&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/lezard.jpg"
+  },
+  {
+    "name_jp": "リザードナチュラ",
+    "name_en": "Lizard Natural",
+    "description_jp": "2007年秋冬コレクションに登場したトカゲのレザー。リザード本来の自然な質感を表現するため、できる限り手を加えず加工した希少価値の高い素材。",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/lezardnatura.jpg"
+  },
+  {
+    "name_jp": "トワルアッシュ",
+    "name_en": "Toile H",
+    "description_jp": "HERMESの頭文字、H（アッシュ）の名が冠された、エルメスが展開する最もベーシックなコットンキャンバス素材。平織りしているため、丈夫で摩擦に強いのが特徴。異なる2色の糸で織り目を表現している。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AF%E3%83%AB%E3%82%A2%E3%83%83%E3%82%B7%E3%83",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/toileh.jpg"
+  },
+  {
+    "name_jp": "トワルGM",
+    "name_en": "Toile GM",
+    "description_jp": "トワルアッシュよりも粗く織ったコットンキャンバス素材。キャンバス地の目が粗いことからGM（Grand Modele）と名付けられた。平織りしているため、丈夫で摩擦に強いのが特徴。異なる2色の糸で織り目を表現している。 ](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AF%E3%83%ABH%E3%83%BB%E3%83%99%E",
+    "image_url": ""
+  },
+  {
+    "name_jp": "トワルアッシュ・ベルリンヌ",
+    "name_en": "Toile Berlinnue",
+    "description_jp": "レザーのようなルックスでありながらキャンバス素材の軽やかさも楽しめる特殊な素材。](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AF%E3%83%ABH%E3%83%BB%E3%83%99%E3%83%AB%E3%83%AA%E3%83%B3%E3%83%8C&stock%5B%5D=2&ProductMetal=&mode=s",
+    "image_url": ""
+  },
+  {
+    "name_jp": "トワルオフィシエ",
+    "name_en": "Toile Officier",
+    "description_jp": "細糸を用いたコットンキャンバス素材。単色の糸で織り目を表現している。 ](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AF%E3%83%AB%E3%82%BD%E3%83%BC%E3%82%A2%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&ProductMetal=&mode=search)",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/toileofficier.jpg"
+  },
+  {
+    "name_jp": "トワルソーアッシュ",
+    "name_en": "Toile So H",
+    "description_jp": "Hロゴに織り込まれたデザインが印象的なコットンとウールからなる2色の織り糸を用いたキャンバス素材。右上から左下に向かって綾目が流れるライトハンドツイルで、軽く、耐久性に優れている。 ガーデンパーティーでのみ展開](https://www.lecrin.jp/products/list?name=%E3%83%88%E3%83%AF%E3%83%AB%E3%82%BD%E3%83%BC%E3%82%",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/toilesoh.jpg"
+  },
+  {
+    "name_jp": "トワルジーン",
+    "name_en": "Toile Jean",
+    "description_jp": "インディゴカラーに染色したタテ糸と染色加工していないヨコ糸で綾織りにしたコットンキャンバス素材。デニム素材とも呼ばれる。右上から左下に向かって綾目が流れるライトハンドツイルに綾織りしているため、丈夫で摩擦に強いのが特徴。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "トワルシェブロン",
+    "name_en": "Toile Chevron",
+    "description_jp": "それぞれのカラーに染色したタテ糸と染色加工していないヨコ糸で綾織りにしたコットンキャンバス素材。ヘリンボーンと呼ばれるV字を縦横に連続した綾織りによって、斜紋線の美しさが際立っている。柔軟性や耐久性に優れているのが特徴。 ](https://www.lecrin.jp/products/list?name=%E3%83%84%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%",
+    "image_url": ""
+  },
+  {
+    "name_jp": "ツイルアッシュ",
+    "name_en": "Twill H",
+    "description_jp": "異なる2色の糸で折り目を表現しており、丈夫で摩擦に強いのが特徴。コットントワルの中でもほぐしやすくフリンジ可能なキャンバス素材が使用されている。](https://www.lecrin.jp/products/list?name=%E3%83%84%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%82%B7%E3%83%A5&stock%5B%5D=2&Product",
+    "image_url": "https://www.lecrin.jp/html/template/lecrin/img/contents/twillh.jpg"
+  },
+  {
+    "name_jp": "フェルト",
+    "name_en": "Felt",
+    "description_jp": "クッション性、保温性や断熱性に優れたウール素材。ソフトな手触りで暖かみのあるのが特徴。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "レナージュ",
+    "name_en": "Renage",
+    "description_jp": "2006年秋冬パリコレクションのデフィレ限定で登場。チェック柄が印象的なカロとも呼ばれるウール素材。軽く、耐久性に優れているのが特徴。現在は廃番となっている。",
+    "image_url": ""
+  },
+  {
+    "name_jp": "クリノラン",
+    "name_en": "Crinolaine",
+    "description_jp": "クランシュバルと呼ばれる馬の尻尾の毛と麻を織り込んだ光沢のある素材。軽く、耐久性に優れているのが特徴。現在は廃番となっている。",
+    "image_url": ""
+  }
+]

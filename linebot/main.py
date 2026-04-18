@@ -1,0 +1,126 @@
+import os
+import json
+import base64
+import tempfile
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).parent / ".env")
+
+from flask import Flask, request, abort
+from linebot.v3 import WebhookHandler
+from linebot.v3.exceptions import InvalidSignatureError
+from linebot.v3.messaging import (
+    Configuration, ApiClient, MessagingApi, MessagingApiBlob,
+    ReplyMessageRequest, TextMessage,
+)
+from linebot.v3.webhooks import MessageEvent, ImageMessageContent
+from google import genai as genai_client
+from PIL import Image
+
+app = Flask(__name__)
+
+LINE_TOKEN  = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
+LINE_SECRET = os.environ["LINE_CHANNEL_SECRET"]
+GEMINI_KEY  = os.environ["GEMINI_API_KEY"]
+
+configuration = Configuration(access_token=LINE_TOKEN)
+handler = WebhookHandler(LINE_SECRET)
+gemini = genai_client.Client(api_key=GEMINI_KEY)
+
+LEATHERS_PATH = Path(__file__).parent.parent / "leathers.json"
+with open(LEATHERS_PATH, encoding="utf-8") as f:
+    _leathers = json.load(f)
+
+LEATHER_REF = "\n".join(
+    f"- {l['name_jp']} ({l['name_en']}): {l['description_jp'][:80]}"
+    for l in _leathers
+)
+
+PROMPT = f"""You are a Hermès luxury goods expert. Analyze this image and identify:
+
+1. **皮革種類 / Leather Type**: Match from the database below. Give Japanese name + English name.
+2. **顏色 / Color**: Use official Hermès color names (e.g. Gold, Noir, Rouge Tomate, Bleu Saphir, Etoupe, etc.)
+3. **五金 / Hardware**: PHW (Palladium) / GHW (Gold) / RGHW (Rose Gold) / BGHW (Black)
+4. **成色 / Condition**: A (Near Mint) / AB (Excellent) / B (Good) / BC (Fair) / C (Used)
+5. **收購建議 / Buying Note**: Brief market comment on this combination's desirability.
+
+Leather Database (reference):
+{LEATHER_REF}
+
+Reply in Traditional Chinese + English bilingual format. Be concise. If unclear in photo, state why.
+Example format:
+🐄 皮革 Leather: トゴ / Togo
+🎨 顏色 Color: Gold（金棕）
+🔩 五金 Hardware: GHW
+✨ 成色 Condition: AB（極少使用）
+💡 收購建議 Note: Togo + Gold + GHW 為最經典組合，市場流通性極高，建議收購。"""
+
+
+@app.route("/callback", methods=["POST"])
+def callback():
+    signature = request.headers.get("X-Line-Signature", "")
+    body = request.get_data(as_text=True)
+    try:
+        handler.handle(body, signature)
+    except InvalidSignatureError:
+        abort(400)
+    return "OK"
+
+
+@handler.add(MessageEvent, message=ImageMessageContent)
+def handle_image(event):
+    with ApiClient(configuration) as api_client:
+        line_api = MessagingApi(api_client)
+
+        # Download image from Line
+        blob_api = MessagingApiBlob(api_client)
+        content_response = blob_api.get_message_content(event.message.id)
+        img_bytes = content_response
+
+        try:
+            # Save to temp file for Gemini
+            with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as tmp:
+                tmp.write(img_bytes)
+                tmp_path = tmp.name
+
+            img = Image.open(tmp_path)
+            response = gemini.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=[PROMPT, img],
+            )
+            reply_text = response.text.strip()
+        except Exception as e:
+            reply_text = f"辨識失敗 / Analysis failed: {e}"
+        finally:
+            try:
+                os.unlink(tmp_path)
+            except Exception:
+                pass
+
+        line_api.reply_message(
+            ReplyMessageRequest(
+                reply_token=event.reply_token,
+                messages=[TextMessage(text=reply_text[:4900])],
+            )
+        )
+
+
+@handler.add(MessageEvent)
+def handle_other(event):
+    # Handle non-image messages
+    with ApiClient(configuration) as api_client:
+        line_api = MessagingApi(api_client)
+        line_api.reply_message(
+            ReplyMessageRequest(
+                reply_token=event.reply_token,
+                messages=[TextMessage(
+                    text="👜 請傳送愛馬仕商品圖片\nPlease send a photo of your Hermès item."
+                )],
+            )
+        )
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
