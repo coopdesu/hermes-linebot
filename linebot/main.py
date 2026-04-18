@@ -32,29 +32,47 @@ LEATHERS_PATH = Path(__file__).parent.parent / "leathers.json"
 with open(LEATHERS_PATH, encoding="utf-8") as f:
     _leathers = json.load(f)
 
-LEATHER_REF = "\n".join(
-    f"- {l['name_jp']} ({l['name_en']}): {l['description_jp']}"
-    for l in _leathers
-)
+def _leather_ref_line(l):
+    parts = [f"- {l['name_jp']} ({l['name_en']}): {l['description_jp']}"]
+    if l.get('visual_characteristics'):
+        parts.append(f"  視覺特徵: {l['visual_characteristics']}")
+    if l.get('how_to_identify'):
+        parts.append(f"  辨識重點: {l['how_to_identify']}")
+    if l.get('shine_level'):
+        parts.append(f"  光澤: {l['shine_level']}")
+    return "\n".join(parts)
 
-PROMPT = f"""You are a Hermès luxury goods expert. Analyze this image and identify:
+LEATHER_REF = "\n".join(_leather_ref_line(l) for l in _leathers)
 
-1. **皮革種類 / Leather Type**: Match from the database below. Give Japanese name + English name.
-2. **顏色 / Color**: Use official Hermès color names (e.g. Gold, Noir, Rouge Tomate, Bleu Saphir, Etoupe, etc.)
-3. **五金 / Hardware**: PHW (Palladium) / GHW (Gold) / RGHW (Rose Gold) / BGHW (Black)
-4. **成色 / Condition**: A (Near Mint) / AB (Excellent) / B (Good) / BC (Fair) / C (Used)
-5. **收購建議 / Buying Note**: Brief market comment on this combination's desirability.
+PROMPT = f"""You are a Hermès luxury goods authentication expert. Carefully analyze this photo and identify:
+
+1. **皮革種類 / Leather Type**: Match EXACTLY from the database below using visual characteristics. Give Japanese name + English name.
+2. **顏色 / Color**: Use official Hermès color names (e.g. Gold, Noir, Rouge Tomate, Bleu Saphir, Etoupe, Craie, Graphite, etc.)
+3. **五金 / Hardware**: PHW (Palladium/銀色) / GHW (Gold/金色) / RGHW (Rose Gold/玫瑰金) / BGHW (Black/黑色)
+4. **成色 / Condition**: A (Near Mint/近新) / AB (Excellent/極少使用) / B (Good/正常使用) / BC (Fair/明顯使用) / C (Used/重度使用)
+5. **收購建議 / Buying Note**: Market comment on this combination's desirability and collectibility.
+
+Key identification tips:
+- Togo: medium round grain, slightly matte, holds shape well
+- Clemence: large grain, soft/slouchy, waxy sheen
+- Epsom: uniform pressed crosshatch pattern, very structured, matte
+- Swift: smooth with no grain, high shine, prone to scratches
+- Box Calf: smooth, high gloss, develops patina with use
+- Chevre Mysore: very fine dense grain, bright colors, high shine
+- Ostrich: distinctive round quill bumps, lightweight
+- Crocodile: rectangular scales with spine line, high gloss
 
 Leather Database (reference):
 {LEATHER_REF}
 
-Reply in Traditional Chinese + English bilingual format. Be concise. If unclear in photo, state why.
+Reply in Traditional Chinese + English bilingual format. Be concise but precise.
+If leather type is unclear, explain what visual cues you can/cannot see.
 Example format:
 🐄 皮革 Leather: トゴ / Togo
-🎨 顏色 Color: Gold（金棕）
-🔩 五金 Hardware: GHW
-✨ 成色 Condition: AB（極少使用）
-💡 收購建議 Note: Togo + Gold + GHW 為最經典組合，市場流通性極高，建議收購。"""
+🎨 顏色 Color: Gold（金棕色）
+🔩 五金 Hardware: GHW（金色）
+✨ 成色 Condition: AB（極少使用，角落輕微磨損）
+💡 收購建議 Note: Togo + Gold + GHW 為最經典組合，市場流通性極高，建議積極收購。"""
 
 
 @app.route("/callback", methods=["POST"])
