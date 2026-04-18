@@ -86,7 +86,7 @@ def handle_image(event):
 
             img = Image.open(tmp_path)
             response = gemini.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-1.5-flash",
                 contents=[PROMPT, img],
             )
             reply_text = response.text.strip()
