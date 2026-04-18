@@ -33,7 +33,7 @@ with open(LEATHERS_PATH, encoding="utf-8") as f:
     _leathers = json.load(f)
 
 LEATHER_REF = "\n".join(
-    f"- {l['name_jp']} ({l['name_en']}): {l['description_jp'][:80]}"
+    f"- {l['name_jp']} ({l['name_en']}): {l['description_jp']}"
     for l in _leathers
 )
 
