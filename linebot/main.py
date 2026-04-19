@@ -2,6 +2,9 @@ import os
 import json
 import base64
 import tempfile
+import threading
+import hashlib
+import hmac
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -12,7 +15,7 @@ from linebot.v3 import WebhookHandler
 from linebot.v3.exceptions import InvalidSignatureError
 from linebot.v3.messaging import (
     Configuration, ApiClient, MessagingApi, MessagingApiBlob,
-    ReplyMessageRequest, TextMessage,
+    ReplyMessageRequest, PushMessageRequest, TextMessage,
 )
 from linebot.v3.webhooks import MessageEvent, ImageMessageContent
 from google import genai as genai_client
@@ -87,29 +90,46 @@ Standard format (when confident):
 💡 收購建議 Note: Togo + Gold + GHW 為最經典組合，市場流通性極高，建議積極收購。"""
 
 
+@app.route("/health", methods=["GET"])
+def health():
+    return "OK"
+
+
 @app.route("/callback", methods=["POST"])
 def callback():
     signature = request.headers.get("X-Line-Signature", "")
     body = request.get_data(as_text=True)
+
+    # Validate signature before spawning thread
+    mac = hmac.new(LINE_SECRET.encode("utf-8"), body.encode("utf-8"), hashlib.sha256).digest()
+    if signature != base64.b64encode(mac).decode("utf-8"):
+        abort(400)
+
+    # Return 200 immediately; process in background to avoid LINE 30s timeout
+    t = threading.Thread(target=_handle_body, args=(body, signature), daemon=True)
+    t.start()
+    return "OK"
+
+
+def _handle_body(body, signature):
     try:
         handler.handle(body, signature)
-    except InvalidSignatureError:
-        abort(400)
-    return "OK"
+    except Exception:
+        pass
 
 
 @handler.add(MessageEvent, message=ImageMessageContent)
 def handle_image(event):
+    user_id = event.source.user_id
     with ApiClient(configuration) as api_client:
         line_api = MessagingApi(api_client)
-
-        # Download image from Line
         blob_api = MessagingApiBlob(api_client)
+
         content_response = blob_api.get_message_content(event.message.id)
         img_bytes = content_response
+        tmp_path = None
 
         try:
-            # Save to temp file for Gemini
             with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as tmp:
                 tmp.write(img_bytes)
                 tmp_path = tmp.name
@@ -123,14 +143,16 @@ def handle_image(event):
         except Exception as e:
             reply_text = f"辨識失敗 / Analysis failed: {e}"
         finally:
-            try:
-                os.unlink(tmp_path)
-            except Exception:
-                pass
+            if tmp_path:
+                try:
+                    os.unlink(tmp_path)
+                except Exception:
+                    pass
 
-        line_api.reply_message(
-            ReplyMessageRequest(
-                reply_token=event.reply_token,
+        # Use push message — reply_token may expire during cold start
+        line_api.push_message(
+            PushMessageRequest(
+                to=user_id,
                 messages=[TextMessage(text=reply_text[:4900])],
             )
         )
@@ -138,12 +160,12 @@ def handle_image(event):
 
 @handler.add(MessageEvent)
 def handle_other(event):
-    # Handle non-image messages
+    user_id = event.source.user_id
     with ApiClient(configuration) as api_client:
         line_api = MessagingApi(api_client)
-        line_api.reply_message(
-            ReplyMessageRequest(
-                reply_token=event.reply_token,
+        line_api.push_message(
+            PushMessageRequest(
+                to=user_id,
                 messages=[TextMessage(
                     text="👜 請傳送愛馬仕商品圖片\nPlease send a photo of your Hermès item."
                 )],
