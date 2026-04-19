@@ -46,28 +46,40 @@ LEATHER_REF = "\n".join(_leather_ref_line(l) for l in _leathers)
 
 PROMPT = f"""You are a Hermès luxury goods authentication expert. Carefully analyze this photo and identify:
 
-1. **皮革種類 / Leather Type**: Match EXACTLY from the database below using visual characteristics. Give Japanese name + English name.
+1. **皮革種類 / Leather Type**: Match from the database below using visual characteristics. Give Japanese name + English name.
 2. **顏色 / Color**: Use official Hermès color names (e.g. Gold, Noir, Rouge Tomate, Bleu Saphir, Etoupe, Craie, Graphite, etc.)
 3. **五金 / Hardware**: PHW (Palladium/銀色) / GHW (Gold/金色) / RGHW (Rose Gold/玫瑰金) / BGHW (Black/黑色)
 4. **成色 / Condition**: A (Near Mint/近新) / AB (Excellent/極少使用) / B (Good/正常使用) / BC (Fair/明顯使用) / C (Used/重度使用)
 5. **收購建議 / Buying Note**: Market comment on this combination's desirability and collectibility.
 
-Key identification tips:
-- Togo: medium round grain, slightly matte, holds shape well
-- Clemence: large grain, soft/slouchy, waxy sheen
-- Epsom: uniform pressed crosshatch pattern, very structured, matte
-- Swift: smooth with no grain, high shine, prone to scratches
-- Box Calf: smooth, high gloss, develops patina with use
-- Chevre Mysore: very fine dense grain, bright colors, high shine
-- Ostrich: distinctive round quill bumps, lightweight
-- Crocodile: rectangular scales with spine line, high gloss
+CRITICAL - Leather identification rules:
+- Epsom: UNIFORM pressed crosshatch/grid pattern, very structured, matte surface — the grid lines are clear and consistent
+- Evercolor: fine natural grain (NOT grid), slightly softer than Epsom, subtle sheen — often confused with Epsom but lacks the crosshatch
+- Togo: medium ROUND bumpy grain, slightly matte, holds shape
+- Clemence: LARGE loose grain, soft/slouchy, waxy sheen — bigger grain than Togo
+- Fjord: similar to Togo but slightly coarser grain with slight sheen
+- Swift: completely smooth with NO grain, semi-gloss, very prone to scratches
+- Box Calf: smooth, HIGH gloss mirror-like finish, develops patina
+- Chevre Mysore: very fine DENSE grain, high shine, vivid colors, stiffer
+- Ostrich: round QUILL bumps in center panel, very distinctive
+- Crocodile (Porosus/Niloticus): rectangular scales, spine line visible, extremely glossy
+
+EASILY CONFUSED PAIRS — when in doubt, say so:
+- Epsom ↔ Evercolor: Epsom has clear grid crosshatch; Evercolor has natural irregular grain. Photos often make this hard to distinguish.
+- Togo ↔ Clemence: grain size is key — Clemence is noticeably larger and softer
+- Togo ↔ Fjord: nearly identical in photos; Fjord has faint sheen
+- Swift ↔ Box Calf: Swift is semi-matte smooth; Box Calf has high mirror gloss
+- Chevre Mysore ↔ Epsom: both fine and structured; Chevre has higher shine and finer grain
 
 Leather Database (reference):
 {LEATHER_REF}
 
 Reply in Traditional Chinese + English bilingual format. Be concise but precise.
-If leather type is unclear, explain what visual cues you can/cannot see.
-Example format:
+
+IMPORTANT: If two leathers are visually similar in this photo, list BOTH possibilities and note that in-person verification is needed. Use this format when uncertain:
+🐄 皮革 Leather: エプソン / Epsom（或 Evercolor，照片難以區分，建議現場觸感確認 / photo ambiguous, in-person verification recommended）
+
+Standard format (when confident):
 🐄 皮革 Leather: トゴ / Togo
 🎨 顏色 Color: Gold（金棕色）
 🔩 五金 Hardware: GHW（金色）
