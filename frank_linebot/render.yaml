@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: frank-linebot
+    env: python
+    buildCommand: pip install -r frank_linebot/requirements.txt
+    startCommand: gunicorn frank_linebot.main:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        sync: false
+      - key: LINE_CHANNEL_SECRET
+        sync: false
+      - key: CALENDAR_ID
+        sync: false
+      - key: GOOGLE_CREDENTIALS_JSON
+        sync: false
