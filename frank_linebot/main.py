@@ -149,6 +149,10 @@ def on_text(event):
         _push(user_id, "已取消。需要再次預約請點下方按鈕。", quick_reply=MAIN_MENU)
         return
 
+    if text in {"聯絡顧問", "聯絡", "電話", "顧問"}:
+        _push(user_id, "Frank 周承諺\n電話：0910693710\n\n點擊上方電話號碼可直接撥打。")
+        return
+
     if text in {"預約賞車", "賞車"}:
         _sessions[user_id] = {"step": "car", "service": "賞車"}
         _push(user_id, "請問想看的車款？（例：330i、X3 等，直接輸入即可）")
