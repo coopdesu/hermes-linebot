@@ -59,6 +59,7 @@ WELCOME = (
 
 MAIN_MENU = QuickReply(items=[
     QuickReplyItem(action=MessageAction(label="預約試乘", text="預約試乘")),
+    QuickReplyItem(action=MessageAction(label="預約賞車", text="預約賞車")),
     QuickReplyItem(action=MessageAction(label="取消預約", text="取消")),
 ])
 
@@ -90,9 +91,11 @@ def _create_event(user_id, session):
     svc = _calendar_service()
     start = datetime.strptime(f"{session['date']} {session['time']}", "%Y-%m-%d %H:%M")
     end = start + timedelta(hours=1)
+    service = session.get("service", "試乘")
     event = {
-        "summary": f"[試乘] {session['car']} - {session['name']}",
+        "summary": f"[{service}] {session['car']} - {session['name']}",
         "description": (
+            f"服務: {service}\n"
             f"車款: {session['car']}\n"
             f"客戶: {session['name']}\n"
             f"電話: {session['phone']}\n"
@@ -146,8 +149,13 @@ def on_text(event):
         _push(user_id, "已取消。需要再次預約請點下方按鈕。", quick_reply=MAIN_MENU)
         return
 
-    if text in {"預約", "預約試乘", "開始", "試乘", "賞車"}:
-        _sessions[user_id] = {"step": "car"}
+    if text in {"預約賞車", "賞車"}:
+        _sessions[user_id] = {"step": "car", "service": "賞車"}
+        _push(user_id, "請問想看的車款？（例：330i、X3 等，直接輸入即可）")
+        return
+
+    if text in {"預約", "預約試乘", "開始", "試乘"}:
+        _sessions[user_id] = {"step": "car", "service": "試乘"}
         _push(user_id, "請問想試乘的車款？（例：330i、X3 等，直接輸入即可）")
         return
 
@@ -195,6 +203,7 @@ def on_text(event):
             _create_event(user_id, session)
             reply = (
                 "✅ 預約完成！\n\n"
+                f"服務：{session.get('service', '試乘')}\n"
                 f"車款：{session['car']}\n"
                 f"時間：{session['date']} {session['time']}\n"
                 f"姓名：{session['name']}\n"
